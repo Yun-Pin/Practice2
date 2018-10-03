@@ -1,0 +1,6 @@
+"0","githubData[c(2,3,4),] -> sampleGithub"
+"0","str_c(sampleGithub$`GitHub username`,"
+"0","      sampleGithub$`GitHub repo name`)"
+"2","Error in str_c(sampleGithub$`GitHub username`, sampleGithub$`GitHub repo name`) : 
+  could not find function ""str_c""
+"

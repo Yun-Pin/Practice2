@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1538567739318.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2888250159",
+    "id" : "24E9CA3E",
+    "lastKnownWriteTime" : 1538567823,
+    "last_content_update" : 1538567823292,
+    "path" : "C:/Users/ASUS/Desktop/Practice/Practice/2018-10-03.Rmd",
+    "project_path" : "2018-10-03.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "1,18",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

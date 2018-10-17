@@ -15,4 +15,8 @@ str_split_fixed(filmVotingData$請選擇你最喜歡的影片二部,", ",n=3) ->
 str_c(splitResult) -> arrayResult
 head(arrayResult)
 ```
+```{r}
+table(arrayResult)
+```
+
 

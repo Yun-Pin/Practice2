@@ -1,0 +1,28 @@
+---
+title: "練習1"
+date: "2018-10-03"
+output: html_document
+params:
+  studentID: "410672091"
+  studentName: "林昀頻"
+  
+## 1
+引入[五大銀行一個月定存固定利率歷史月資料](https://raw.githubusercontent.com/tpemartin/github-data/master/bankdata.csv)。
+
+```{r}
+library(readr)
+bankdata <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/bankdata.csv")
+
+```
+
+### 1.1
+將**銀行**變數改成factor
+```{r ans11}
+as.factor(bankdata$銀行) -> bankdata$銀行
+
+銀行 <- c("第一銀行", "台灣銀行", "合作金庫", "土地銀行", "彰化銀行", "華南銀行")
+
+
+```
+
+

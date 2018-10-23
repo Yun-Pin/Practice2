@@ -27,9 +27,15 @@ as.factor(bankdata$銀行)
 ```{r ans12}
 
 library(lubridate)
-x <- substr(bankdata$年月,start=1,stop=3)
-x <- x+1911
+library(stringr)
+x <- bankdata$年月
+str_sub(x,1,3)
+y <- str_sub(x,1,3)
+b <- as.numeric(y)
+z <- b+1911
 
+a <- str_sub(x,4,6)
+bankdata$年月 <- paste(z,a,sep="")
 
 ```
 

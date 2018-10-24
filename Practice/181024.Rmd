@@ -68,3 +68,55 @@ StuDF[c(T,F,F,F,F),c(F,T,F)]
 StuDF[c(T,F,F,T,F),]
 ```
 
+```{r}
+a<-c(T,T,F,F,T,F,F)
+sum(a)
+```
+
+```{r}
+(StuDF$score >= 80)
+(StuDF$name == "小新")
+```
+
+```{r}
+which(StuDF$score >= 80)
+which(StuDF$name == "小新")
+```
+```{r}
+StuDF[which(StuDF$score>=80),2]
+StuDF[c(1,3),2]
+StuDF[(StuDF$score>=80),2]
+StuDF[c(T,F,T,F,F),2]
+StuDF[which(StuDF$name == "小新"),3]
+```
+```{r}
+aa <- (classSurvey$性別 == "男")
+
+bb <- (classSurvey$本學期學分數 > 20)
+
+cc <- (classSurvey$性別 == "男" | 
+    classSurvey$本學期學分數 > 20)
+```
+```{r}
+classSurvey[which(classSurvey$性別 == "男" & 
+    classSurvey$本學期學分數 > 26), 3]
+```
+
+```{r}
+StuDF[c(1,4),c(2)]
+StuDF[,c(2)][c(1,4)]
+
+## the second one is equivalent to 
+StuDF[,c(2)] -> aa
+aa[c(1,4)] 
+```
+```{r}
+StuDF[,c(1,3)][c(1,4)]
+
+```
+
+```{r}
+StuDF[,c(1,3)][c(1,4),]
+```
+StuDF[c(1,4),c(1,3)]
+

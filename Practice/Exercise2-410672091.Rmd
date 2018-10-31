@@ -16,7 +16,13 @@ iPeenData <- read_csv("https://raw.githubusercontent.com/tpemartin/course-107-1-
 
 ```{r ans1}
 library(stringr)
-
+library(readr)
+iPeenData <- read_csv("https://raw.githubusercontent.com/tpemartin/course-107-1-programming-for-data-science/master/data/iPeenData.csv")
+library(stringr)
+a <- str_replace(iPeenData$均消,",","")
+b <- str_sub(a,13,-8)
+b <- as.numeric(b)
+b
 
 ```
 

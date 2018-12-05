@@ -33,6 +33,8 @@ print(result.mean)
 library(stringr)
 str_which(gsHW2ws, "ans")
 
+ansNames <- str_which(names(gsHW2ws),"ans")
+
 ```
 
 ## 1.3

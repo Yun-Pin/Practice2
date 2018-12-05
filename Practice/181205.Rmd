@@ -32,5 +32,27 @@ max(libraryData$書籍上架年月)-> maxNumber
 min(libraryData$書籍上架年月)-> minNumber
 paste0("最大值： ",maxNumber, " 最小值： ",minNumber)
 ```
+```{r}
+minMaxFun <- function(x){
+  max(x)-> maxNumber
+  min(x)-> minNumber
+  paste0("最大值： ",maxNumber, " 最小值： ",minNumber)
+}
+```
+```{r}
+libraryData %>%
+  select(讀者借閱冊數,書籍出版日期) 
+```
+
+```{r}
+libraryData %>%
+  select(讀者借閱冊數,書籍出版日期) %>%
+  summarise(
+    讀者平均借閱冊數=mean(讀者借閱冊數),
+    最小書籍出版日期=min(書籍出版日期),
+    最大書籍出版日期=max(書籍出版日期)
+  )
+```
+
 
 

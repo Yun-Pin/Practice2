@@ -58,4 +58,31 @@ for(i in c(1:18)){
 }
 ```
 
+```{r}
+ans<-0
+for(i in 1:10){
+  newlyAdded<-i
+  ans<-ans+newlyAdded
+}
+```
+
+```{r}
+libraryData$學號 %>% as.factor %>% levels -> student
+studentBorrow <- vector("numeric", length(student))
+for(i in c(1:length(student))){
+student_i <- student[i]
+numericalIndex <- which(libraryData$學號 == student_i)
+studentSubsample_i <- libraryData[numericalIndex,]
+studentBorrow_i <- nrow(studentSubsample_i)
+studentBorrow[[i]] <- studentBorrow_i
+}
+```
+```{r}
+libraryData %>%
+  mutate(
+    學系=str_sub(學號,5,6)
+    ##相當於 libraryData$學系 <-
+#str_sub
+  )
+```
 

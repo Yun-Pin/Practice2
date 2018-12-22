@@ -96,7 +96,13 @@ x<-3
 na2zero(x)=3
 ```
 
+
 ```{r ans13}
+na2zero<- function(x){
+  ifelse(x=NA, 0, x)
+}
+
+
 ```
 
 ## 1.4 NA處理 

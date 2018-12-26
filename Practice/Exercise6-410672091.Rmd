@@ -102,7 +102,6 @@ na2zero<- function(x){
   ifelse(x=NA, 0, x)
 }
 
-
 ```
 
 ## 1.4 NA處理 
